@@ -52,15 +52,15 @@ func Atoi(s string) int {
 
 func main() {
 	if len(os.Args) == 2 && len(os.Args[1]) == 4 {
-		// check if theres atleast two different digits
-		for i := 0; i < len(os.Args[1]); i++ {
-			for j := i + 1; j < len(os.Args[1]); j++ {
-				if os.Args[1][i] == os.Args[1][j] {
-					fmt.Println("Input must have at least two different digits")
-					return
-				}
-			}
-		}
+		// check if theres two different numbers
+		// for i := 0; i < len(os.Args[1]); i++ {
+		// 	for j := i + 1; j < len(os.Args[1]); j++ {
+		// 		if os.Args[1][i] == os.Args[1][j] {
+		// 			fmt.Println("Error")
+		// 			return
+		// 		}
+		// 	}
+		// }
 		fmt.Println(os.Args[1])
 		fmt.Println(kaprekar(os.Args[1]))
 	} else {
