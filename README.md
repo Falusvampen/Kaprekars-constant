@@ -1,0 +1,1 @@
+# Kaprekars-constant
