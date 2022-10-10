@@ -7,8 +7,7 @@ import (
 )
 
 func kaprekar(s string) string {
-	sdown := s
-	sup := s
+	sdown, sup := s, s
 	var res int
 	if s == "6174" {
 		return "done"
@@ -32,6 +31,7 @@ func kaprekar(s string) string {
 	}
 	res = Atoi(sdown) - Atoi(sup)
 	fmt.Println(res)
+
 	return kaprekar(strconv.Itoa(res))
 }
 
